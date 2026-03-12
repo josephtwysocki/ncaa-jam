@@ -1,0 +1,10 @@
+{
+  "illinois": {
+    "offense": { "pts": 7, "margin": 3, "ast": 6, "reb": 5, "afgm": 7, "ato": 9, "efg": 7, "eff": 7 },
+    "defense": { "pts": 7, "margin": 3, "ast": 6, "reb": 5, "afgm": 7, "ato": 9, "efg": 7, "eff": 7 }
+  },
+  "purdue": {
+    "offense": { "pts": 9, "margin": 5, "ast": 4, "reb": 8, "afgm": 6, "ato": 7, "efg": 8, "eff": 9 },
+    "defense": { "pts": 5, "margin": 2, "ast": 7, "reb": 6, "afgm": 8, "ato": 8, "efg": 6, "eff": 5 }
+  }
+}

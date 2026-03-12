@@ -1,66 +1,122 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client"
 
-export default function Home() {
+import { useEffect, useMemo, useState, useRef } from "react"
+import TEAMS_DATA_FILE from "@/data/teams.v3.json"
+import PLAYERS_DATA_FILE from "@/data/players.v2.json"
+import TEAM_STATS_FILE from "@/data/teamStats.v3.json" 
+import TeamSelectRail from "@/components/TeamSelectRail"
+import TeamWindow from "@/components/TeamWindow"
+import TeamStatsComparison from "@/components/TeamStatsComparison"
+import "./globals.css"
+
+const ROWS_PER_COL = 5; // Fixed 5 rows as per arcade style
+
+export default function Page() {
+  const [teamA, setTeamA] = useState<string | null>(null)
+  const [teamB, setTeamB] = useState<string | null>(null)
+  const [cursorIndex, setCursorIndex] = useState(0)
+  const [pickPhase, setPickPhase] = useState<"A" | "B">("A")
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  // 1. Sort and Pad Teams
+  const gridTeams = useMemo(() => {
+    const sorted = [...TEAMS_DATA_FILE].sort((a, b) => a.displayName.localeCompare(b.displayName));
+    const numCols = Math.max(4, Math.ceil(sorted.length / ROWS_PER_COL));
+    const totalSlots = numCols * ROWS_PER_COL;
+    
+    // Fill remaining slots with null for empty spots
+    const padded = [...sorted];
+    while (padded.length < totalSlots) {
+      padded.push(null as any);
+    }
+    return padded;
+  }, []);
+
+  const teamAData = gridTeams.find(t => t?.id === teamA) || null
+  const teamBData = gridTeams.find(t => t?.id === teamB) || null
+  const statsA = teamA ? (TEAM_STATS_FILE as any)[teamA] : null
+  const statsB = teamB ? (TEAM_STATS_FILE as any)[teamB] : null
+  const playersA = teamA ? (PLAYERS_DATA_FILE as any)[teamA] : null
+  const playersB = teamB ? (PLAYERS_DATA_FILE as any)[teamB] : null
+
+  const playRazzle = () => {
+    if (audioRef.current) {
+      audioRef.current.currentTime = 0;
+      audioRef.current.play().catch(() => {}); 
+    }
+  };
+
+  const selectTeam = (teamId: string) => {
+    if (pickPhase === "A") {
+      setTeamA(teamId);
+      setPickPhase("B");
+      playRazzle();
+    } else {
+      // Prevent selecting the same team for both players
+      if (teamId === teamA) return; 
+      setTeamB(teamId);
+      playRazzle();
+    }
+  }
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      const totalSlots = gridTeams.length;
+
+      if (e.key === "ArrowDown") setCursorIndex(prev => (prev + 1) % totalSlots);
+      if (e.key === "ArrowUp") setCursorIndex(prev => (prev - 1 + totalSlots) % totalSlots);
+      if (e.key === "ArrowRight") setCursorIndex(prev => Math.min(prev + ROWS_PER_COL, totalSlots - 1));
+      if (e.key === "ArrowLeft") setCursorIndex(prev => Math.max(prev - ROWS_PER_COL, 0));
+      
+      if (e.key === "Enter") {
+        const team = gridTeams[cursorIndex];
+        if (team) selectTeam(team.id);
+      }
+      
+      if (e.key === "Backspace") {
+          if (teamB) { setTeamB(null); setPickPhase("B"); }
+          else { setTeamA(null); setPickPhase("A"); }
+      }
+    }
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [cursorIndex, gridTeams, pickPhase, teamA, teamB]);
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="jamScreenContainer">
+      {/* SEGMENTED HEADER BAR */}
+      <div className="jamHeaderBarContainer">
+        {/* Left Detached Pieces */}
+        <div className="jamBarSegment jamBarOuter" />
+        <div className="jamBarSegment jamBarInner" />
+
+        {/* Center Trapezoid with Title */}
+        <div className="jamBarSegment jamBarCenter">
+          <h1 className="jamMainTitle">NCAA JAM</h1>
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+
+        {/* Right Detached Pieces (Flipped) */}
+        <div className="jamBarSegment jamBarInner jamBarFlip" />
+        <div className="jamBarSegment jamBarOuter jamBarFlip" />
+      </div>
+      <audio ref={audioRef} src="/sound_razzle_dazzle.wav" preload="auto" />
+      
+      
+      <TeamSelectRail
+        teams={gridTeams}
+        cursorIndex={cursorIndex}
+        teamAId={teamA}
+        teamBId={teamB}
+        onCursorChange={setCursorIndex}
+        onSelect={selectTeam}
+      />
+
+      <div className="jamWindowsWrapper">
+        <TeamWindow team={teamAData} players={playersA} playerNum={1} />
+        <TeamWindow team={teamBData} players={playersB} playerNum={2} />
+      </div>
+
+      <TeamStatsComparison teamAStats={statsA} teamBStats={statsB} />
     </div>
-  );
+  )
 }

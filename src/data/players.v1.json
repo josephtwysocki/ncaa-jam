@@ -1,0 +1,74 @@
+{
+  "michigan-wolverines": [
+    { "lastName": "Lendeborg", "headshot": "/headshots/yaxel_test.png", "stats": { "fg": 7, "tp": 3, "ft": 8, "reb": 5, "ast": 7, "stl": 3, "to": 9, "pts": 7 } },
+    { "lastName": "Johnson", "headshot": "/placeholder_headshot.png", "stats": { "fg": 7, "tp": 3, "ft": 8, "reb": 5, "ast": 7, "stl": 3, "to": 9, "pts": 7 } }
+  ],
+  "illinois-fighting-illini": [
+    { "lastName": "Johnson", "headshot": "/placeholder_headshot.png", "stats": { "fg": 7, "tp": 3, "ft": 8, "reb": 5, "ast": 7, "stl": 3, "to": 9, "pts": 7 } },
+    { "lastName": "Johnson", "headshot": "/placeholder_headshot.png", "stats": { "fg": 7, "tp": 3, "ft": 8, "reb": 5, "ast": 7, "stl": 3, "to": 9, "pts": 7 } }
+  ],
+  "michigan-st-spartans": [
+    { "lastName": "Johnson", "headshot": "/placeholder_headshot.png", "stats": { "fg": 7, "tp": 3, "ft": 8, "reb": 5, "ast": 7, "stl": 3, "to": 9, "pts": 7 } },
+    { "lastName": "Johnson", "headshot": "/placeholder_headshot.png", "stats": { "fg": 7, "tp": 3, "ft": 8, "reb": 5, "ast": 7, "stl": 3, "to": 9, "pts": 7 } }
+  ],
+  "nebraska-cornhuskers": [
+    { "lastName": "Johnson", "headshot": "/placeholder_headshot.png", "stats": { "fg": 7, "tp": 3, "ft": 8, "reb": 5, "ast": 7, "stl": 3, "to": 9, "pts": 7 } },
+    { "lastName": "Johnson", "headshot": "/placeholder_headshot.png", "stats": { "fg": 7, "tp": 3, "ft": 8, "reb": 5, "ast": 7, "stl": 3, "to": 9, "pts": 7 } }
+  ],
+  "purdue-boilermakers": [
+    { "lastName": "Johnson", "headshot": "/placeholder_headshot.png", "stats": { "fg": 7, "tp": 3, "ft": 8, "reb": 5, "ast": 7, "stl": 3, "to": 9, "pts": 7 } },
+    { "lastName": "Johnson", "headshot": "/placeholder_headshot.png", "stats": { "fg": 7, "tp": 3, "ft": 8, "reb": 5, "ast": 7, "stl": 3, "to": 9, "pts": 7 } }
+  ],
+  "wisconsin-badgers": [
+    { "lastName": "Johnson", "headshot": "/placeholder_headshot.png", "stats": { "fg": 7, "tp": 3, "ft": 8, "reb": 5, "ast": 7, "stl": 3, "to": 9, "pts": 7 } },
+    { "lastName": "Johnson", "headshot": "/placeholder_headshot.png", "stats": { "fg": 7, "tp": 3, "ft": 8, "reb": 5, "ast": 7, "stl": 3, "to": 9, "pts": 7 } }
+  ],
+  "iowa-hawkeyes": [
+    { "lastName": "Johnson", "headshot": "/placeholder_headshot.png", "stats": { "fg": 7, "tp": 3, "ft": 8, "reb": 5, "ast": 7, "stl": 3, "to": 9, "pts": 7 } },
+    { "lastName": "Johnson", "headshot": "/placeholder_headshot.png", "stats": { "fg": 7, "tp": 3, "ft": 8, "reb": 5, "ast": 7, "stl": 3, "to": 9, "pts": 7 } }
+  ],
+  "ohio_st": [
+    { "lastName": "Johnson", "headshot": "/placeholder_headshot.png", "stats": { "fg": 7, "tp": 3, "ft": 8, "reb": 5, "ast": 7, "stl": 3, "to": 9, "pts": 7 } },
+    { "lastName": "Johnson", "headshot": "/placeholder_headshot.png", "stats": { "fg": 7, "tp": 3, "ft": 8, "reb": 5, "ast": 7, "stl": 3, "to": 9, "pts": 7 } }
+  ],
+  "northwestern-wildcats": [
+    { "lastName": "Johnson", "headshot": "/placeholder_headshot.png", "stats": { "fg": 7, "tp": 3, "ft": 8, "reb": 5, "ast": 7, "stl": 3, "to": 9, "pts": 7 } },
+    { "lastName": "Johnson", "headshot": "/placeholder_headshot.png", "stats": { "fg": 7, "tp": 3, "ft": 8, "reb": 5, "ast": 7, "stl": 3, "to": 9, "pts": 7 } }
+  ],
+  "indiana-hoosiers": [
+    { "lastName": "Johnson", "headshot": "/placeholder_headshot.png", "stats": { "fg": 7, "tp": 3, "ft": 8, "reb": 5, "ast": 7, "stl": 3, "to": 9, "pts": 7 } },
+    { "lastName": "Johnson", "headshot": "/placeholder_headshot.png", "stats": { "fg": 7, "tp": 3, "ft": 8, "reb": 5, "ast": 7, "stl": 3, "to": 9, "pts": 7 } }
+  ],
+  "penn_st": [
+    { "lastName": "Johnson", "headshot": "/placeholder_headshot.png", "stats": { "fg": 7, "tp": 3, "ft": 8, "reb": 5, "ast": 7, "stl": 3, "to": 9, "pts": 7 } },
+    { "lastName": "Johnson", "headshot": "/placeholder_headshot.png", "stats": { "fg": 7, "tp": 3, "ft": 8, "reb": 5, "ast": 7, "stl": 3, "to": 9, "pts": 7 } }
+  ],
+  "minnesota-golden-gophers": [
+    { "lastName": "Johnson", "headshot": "/placeholder_headshot.png", "stats": { "fg": 7, "tp": 3, "ft": 8, "reb": 5, "ast": 7, "stl": 3, "to": 9, "pts": 7 } },
+    { "lastName": "Johnson", "headshot": "/placeholder_headshot.png", "stats": { "fg": 7, "tp": 3, "ft": 8, "reb": 5, "ast": 7, "stl": 3, "to": 9, "pts": 7 } }
+  ],
+  "washington-huskies": [
+    { "lastName": "Johnson", "headshot": "/placeholder_headshot.png", "stats": { "fg": 7, "tp": 3, "ft": 8, "reb": 5, "ast": 7, "stl": 3, "to": 9, "pts": 7 } },
+    { "lastName": "Johnson", "headshot": "/placeholder_headshot.png", "stats": { "fg": 7, "tp": 3, "ft": 8, "reb": 5, "ast": 7, "stl": 3, "to": 9, "pts": 7 } }
+  ],
+  "maryland-terrapins": [
+    { "lastName": "Johnson", "headshot": "/placeholder_headshot.png", "stats": { "fg": 7, "tp": 3, "ft": 8, "reb": 5, "ast": 7, "stl": 3, "to": 9, "pts": 7 } },
+    { "lastName": "Johnson", "headshot": "/placeholder_headshot.png", "stats": { "fg": 7, "tp": 3, "ft": 8, "reb": 5, "ast": 7, "stl": 3, "to": 9, "pts": 7 } }
+  ],
+  "duke-blue-devils": [
+    { "lastName": "Johnson", "headshot": "/placeholder_headshot.png", "stats": { "fg": 7, "tp": 3, "ft": 8, "reb": 5, "ast": 7, "stl": 3, "to": 9, "pts": 7 } },
+    { "lastName": "Johnson", "headshot": "/placeholder_headshot.png", "stats": { "fg": 7, "tp": 3, "ft": 8, "reb": 5, "ast": 7, "stl": 3, "to": 9, "pts": 7 } }
+  ],
+  "florida-state-seminoles": [
+    { "lastName": "Johnson", "headshot": "/placeholder_headshot.png", "stats": { "fg": 7, "tp": 3, "ft": 8, "reb": 5, "ast": 7, "stl": 3, "to": 9, "pts": 7 } },
+    { "lastName": "Johnson", "headshot": "/placeholder_headshot.png", "stats": { "fg": 7, "tp": 3, "ft": 8, "reb": 5, "ast": 7, "stl": 3, "to": 9, "pts": 7 } }
+  ],
+  "virginia-cavaliers": [
+    { "lastName": "De Ridder", "headshot": "/headshots/ridder_test.png", "stats": { "fg": 7, "tp": 3, "ft": 8, "reb": 5, "ast": 7, "stl": 3, "to": 9, "pts": 7 } },
+    { "lastName": "Thomas", "headshot": "/headshots/thomas_test.png", "stats": { "fg": 7, "tp": 3, "ft": 8, "reb": 5, "ast": 7, "stl": 3, "to": 9, "pts": 7 } }
+  ],
+  "wake-forest-demon-deacons": [
+    { "lastName": "Johnson", "headshot": "/placeholder_headshot.png", "stats": { "fg": 7, "tp": 3, "ft": 8, "reb": 5, "ast": 7, "stl": 3, "to": 9, "pts": 7 } },
+    { "lastName": "Johnson", "headshot": "/placeholder_headshot.png", "stats": { "fg": 7, "tp": 3, "ft": 8, "reb": 5, "ast": 7, "stl": 3, "to": 9, "pts": 7 } }
+  ]
+}

@@ -1,0 +1,16 @@
+[
+  { "id": "michigan-wolverines", "displayName": "Michigan", "primaryColor": "#000000", "secondaryColor": "#FFFFFF" },
+  { "id": "illinois-fighting-illini", "displayName": "Illinois", "primaryColor": "#000000", "secondaryColor": "#FFFFFF" },
+  { "id": "michigan-st-spartans", "displayName": "Michigan St", "primaryColor": "#000000", "secondaryColor": "#FFFFFF" },
+  { "id": "nebraska-cornhuskers", "displayName": "Nebraska", "primaryColor": "#000000", "secondaryColor": "#FFFFFF" },
+  { "id": "purdue-boilermakers", "displayName": "Purdue", "primaryColor": "#000000", "secondaryColor": "#FFFFFF" },
+  { "id": "wisconsin-badgers", "displayName": "Wisconsin", "primaryColor": "#000000", "secondaryColor": "#FFFFFF" },
+  { "id": "iowa-hawkeyes", "displayName": "Iowa", "primaryColor": "#000000", "secondaryColor": "#FFFFFF" },
+  { "id": "ohio_st", "displayName": "Ohio St", "primaryColor": "#000000", "secondaryColor": "#FFFFFF" },
+  { "id": "northwestern-wildcats", "displayName": "Northwestern", "primaryColor": "#000000", "secondaryColor": "#FFFFFF" },
+  { "id": "indiana-hoosiers", "displayName": "Indiana", "primaryColor": "#000000", "secondaryColor": "#FFFFFF" },
+  { "id": "penn_st", "displayName": "Penn St", "primaryColor": "#000000", "secondaryColor": "#FFFFFF" },
+  { "id": "minnesota-golden-gophers", "displayName": "Minnesota", "primaryColor": "#000000", "secondaryColor": "#FFFFFF" },
+  { "id": "washington-huskies", "displayName": "Washington", "primaryColor": "#000000", "secondaryColor": "#FFFFFF" },
+  { "id": "maryland-terrapins", "displayName": "Maryland", "primaryColor": "#000000", "secondaryColor": "#FFFFFF" }
+]
