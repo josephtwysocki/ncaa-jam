@@ -927,3 +927,24 @@ button:focus,
   padding: 4px 0;
   text-transform: uppercase;
 }
+
+/* -----------------------
+   HEADER IMAGE
+-------------------------- */
+
+.jamHeaderImage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.jamHeaderLogo {
+  width: 75%;
+  max-width: 750px;
+  height: auto;
+  image-rendering: pixelated;
+  filter:
+    drop-shadow(0 4px 0 #000)
+    drop-shadow(0 8px 0 #000);
+}

@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useMemo, useState, useRef } from "react"
+import Image from "next/image"
 import TEAMS_DATA_FILE from "@/data/teams.v3.json"
 import PLAYERS_DATA_FILE from "@/data/players.v2.json"
 import TEAM_STATS_FILE from "@/data/teamStats.v3.json" 
@@ -86,19 +87,15 @@ export default function Page() {
   return (
     <div className="jamScreenContainer">
       {/* SEGMENTED HEADER BAR */}
-      <div className="jamHeaderBarContainer">
-        {/* Left Detached Pieces */}
-        <div className="jamBarSegment jamBarOuter" />
-        <div className="jamBarSegment jamBarInner" />
-
-        {/* Center Trapezoid with Title */}
-        <div className="jamBarSegment jamBarCenter">
-          <h1 className="jamMainTitle">NCAA JAM</h1>
-        </div>
-
-        {/* Right Detached Pieces (Flipped) */}
-        <div className="jamBarSegment jamBarInner jamBarFlip" />
-        <div className="jamBarSegment jamBarOuter jamBarFlip" />
+      <div className="jamHeaderImage">
+        <Image
+          src="/header_logo.png"
+          alt="NCAA Jam"
+          width={900}
+          height={140}
+          priority
+          className="jamHeaderLogo"
+        />
       </div>
       <audio ref={audioRef} src="/sound_razzle_dazzle.wav" preload="auto" />
       
