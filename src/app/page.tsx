@@ -7,6 +7,7 @@ import TEAM_STATS_FILE from "@/data/teamStats.v3.json"
 import TeamSelectRail from "@/components/TeamSelectRail"
 import TeamWindow from "@/components/TeamWindow"
 import TeamStatsComparison from "@/components/TeamStatsComparison"
+import ProjectedFinalScore from "@/components/ProjectedFinalScore";
 import "./globals.css"
 
 const ROWS_PER_COL = 5; // Fixed 5 rows as per arcade style
@@ -117,6 +118,8 @@ export default function Page() {
       </div>
 
       <TeamStatsComparison teamAStats={statsA} teamBStats={statsB} />
+
+      <ProjectedFinalScore homeScore={68} awayScore={107} />
     </div>
   )
 }
