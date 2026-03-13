@@ -119,7 +119,12 @@ export default function Page() {
 
       <TeamStatsComparison teamAStats={statsA} teamBStats={statsB} />
 
-      <ProjectedFinalScore homeScore={68} awayScore={107} />
+      {teamA && teamB && (
+        <ProjectedFinalScore 
+          homeScore={68} 
+          awayScore={107} 
+        />
+      )}
     </div>
   )
 }
