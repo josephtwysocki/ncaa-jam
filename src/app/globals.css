@@ -575,13 +575,17 @@ button:focus,
 }
 
 .jamNameplate {
-  background: #008cdb;
-  color: #fff;
   text-align: center;
   font-weight: 900;
   padding: 4px 0;
   margin-bottom: 8px;
   text-transform: uppercase;
+  color: #fff;
+  text-shadow: 2px 2px 0px #000;
+}
+
+.p1Window .jamNameplate {
+  background: #008cdb;
 }
 
 .p2Window .jamNameplate {
