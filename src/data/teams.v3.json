@@ -382,5 +382,12 @@
     "displayName": "UMBC",
     "primaryColor": "#000000",
     "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "miami-oh-redhawks",
+    "displayName": "Miami (OH)",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
   }
+  
 ]
