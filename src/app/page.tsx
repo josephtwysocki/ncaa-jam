@@ -9,6 +9,7 @@ import TeamSelectRail from "@/components/TeamSelectRail"
 import TeamWindow from "@/components/TeamWindow"
 import TeamStatsComparison from "@/components/TeamStatsComparison"
 import ProjectedFinalScore from "@/components/ProjectedFinalScore";
+import BackgroundMusic from "@/components/BackgroundMusic";
 import "./globals.css"
 
 const ROWS_PER_COL = 5; // Fixed 5 rows as per arcade style
@@ -86,6 +87,7 @@ export default function Page() {
 
   return (
     <div className="jamScreenContainer">
+      <BackgroundMusic />
       {/* SEGMENTED HEADER BAR */}
       <div className="jamHeaderImage">
         <Image
