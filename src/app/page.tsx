@@ -10,6 +10,7 @@ import TeamWindow from "@/components/TeamWindow"
 import TeamStatsComparison from "@/components/TeamStatsComparison"
 import ProjectedFinalScore from "@/components/ProjectedFinalScore";
 import BackgroundMusic from "@/components/BackgroundMusic";
+import PREDICTED_SCORES_FILE from "@/data/predictedScores.v1.json"
 import "./globals.css"
 
 const ROWS_PER_COL = 5; // Fixed 5 rows as per arcade style
@@ -41,6 +42,32 @@ export default function Page() {
   const statsB = teamB ? (TEAM_STATS_FILE as any)[teamB] : null
   const playersA = teamA ? (PLAYERS_DATA_FILE as any)[teamA] : null
   const playersB = teamB ? (PLAYERS_DATA_FILE as any)[teamB] : null
+
+  const predictedMatchup = useMemo(() => {
+    if (!teamA || !teamB) return null;
+
+    const match = (PREDICTED_SCORES_FILE as any[]).find(
+      (row) =>
+        (row.team_a === teamA && row.team_b === teamB) ||
+        (row.team_a === teamB && row.team_b === teamA)
+    );
+
+    if (!match) return null;
+
+    // If the JSON row is stored in reverse order, flip the scores back
+    // so teamA always maps to homeScore and teamB maps to awayScore.
+    if (match.team_a === teamA && match.team_b === teamB) {
+      return {
+        homeScore: Math.round(match.pred_score_a),
+        awayScore: Math.round(match.pred_score_b),
+      };
+    }
+
+    return {
+      homeScore: Math.round(match.pred_score_b),
+      awayScore: Math.round(match.pred_score_a),
+    };
+  }, [teamA, teamB]);
 
   const playRazzle = () => {
     if (audioRef.current) {
@@ -118,10 +145,10 @@ export default function Page() {
 
       <TeamStatsComparison teamAStats={statsA} teamBStats={statsB} />
 
-      {teamA && teamB && (
-        <ProjectedFinalScore 
-          homeScore={68} 
-          awayScore={107} 
+      {teamA && teamB && predictedMatchup && (
+        <ProjectedFinalScore
+          homeScore={predictedMatchup.homeScore}
+          awayScore={predictedMatchup.awayScore}
         />
       )}
     </div>
