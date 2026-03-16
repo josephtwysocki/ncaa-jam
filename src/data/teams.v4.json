@@ -1,0 +1,410 @@
+[
+  {
+    "id": "duke-blue-devils",
+    "displayName": "Duke",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "siena-saints",
+    "displayName": "Siena",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "ohio-st-buckeyes",
+    "displayName": "Ohio St",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "texas-christian-horned-frogs",
+    "displayName": "tcu",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "st-johns-red-storm",
+    "displayName": "St John's",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "northern-iowa-panthers",
+    "displayName": "N Iowa",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "kansas-jayhawks",
+    "displayName": "Kansas",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "california-baptist-lancers",
+    "displayName": "CA Baptist",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "louisville-cardinals",
+    "displayName": "Lousiville",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "south-florida-bulls",
+    "displayName": "USF",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "michigan-st-spartans",
+    "displayName": "Michigan St",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "north-dakota-state-bison",
+    "displayName": "N Dakota St",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "ucla-bruins",
+    "displayName": "UCLA",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "central-florida-knights",
+    "displayName": "UCF",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "connecticut-huskies",
+    "displayName": "Uconn",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "furman-paladins",
+    "displayName": "Furman",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "florida-gators",
+    "displayName": "Florida",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "clemson-tigers",
+    "displayName": "Clemson",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "iowa-hawkeyes",
+    "displayName": "Iowa",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "vanderbilt-commodores",
+    "displayName": "Vanderbilt",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "mcneese-st-cowboys",
+    "displayName": "McNeese",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "nebraska-cornhuskers",
+    "displayName": "Nebraska",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "troy-trojans",
+    "displayName": "Troy",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "north-carolina-tar-heels",
+    "displayName": "North Carolina",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "vcu-rams",
+    "displayName": "VCU",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "illinois-fighting-illini",
+    "displayName": "Illinois",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "pennsylvania-quakers",
+    "displayName": "Penn",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "saint-marys-gaels",
+    "displayName": "Saint Mary's",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "texas-am-aggies",
+    "displayName": "Texas A&M",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "houston-cougars",
+    "displayName": "Houston",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "idaho-vandals",
+    "displayName": "Idaho",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "nc-state-wolfpack",
+    "displayName": "NC State",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "texas-longhorns",
+    "displayName": "Texas",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "southern-methodist-mustangs",
+    "displayName": "SMU",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "miami-oh-redhawks",
+    "displayName": "Miami (OH)",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "arizona-wildcats",
+    "displayName": "Arizona",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "liu-sharks",
+    "displayName": "LIU",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "villanova-wildcats",
+    "displayName": "Villanova",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "utah-st-aggies",
+    "displayName": "Utah St",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "wisconsin-badgers",
+    "displayName": "Wisconsin",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "high-point-panthers",
+    "displayName": "High Point",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "arkansas-razorbacks",
+    "displayName": "Arkansas",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "hawaii-rainbow-warriors",
+    "displayName": "Hawaii",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "brigham-young-cougars",
+    "displayName": "Byu",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "gonzaga-bulldogs",
+    "displayName": "Gonzaga",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "kennesaw-st-owls",
+    "displayName": "Kennesaw",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "miami-hurricanes",
+    "displayName": "Miami",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "missouri-tigers",
+    "displayName": "Missouri",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "purdue-boilermakers",
+    "displayName": "Purdue",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "queens-university-of-charlotte-royals",
+    "displayName": "Queens",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "michigan-wolverines",
+    "displayName": "Michigan",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "georgia-bulldogs",
+    "displayName": "Georgia",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "saint-louis-billikens",
+    "displayName": "St Louis",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "texas-tech-red-raiders",
+    "displayName": "Texas Tech",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "akron-zips",
+    "displayName": "Akron",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "alabama-crimson-tide",
+    "displayName": "Alabama",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "hofstra-pride",
+    "displayName": "Hofstra",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "tennessee-volunteers",
+    "displayName": "Tennessee",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "virginia-cavaliers",
+    "displayName": "Virginia",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "wright-st-raiders",
+    "displayName": "Wright St",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "kentucky-wildcats",
+    "displayName": "Kentucky",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "santa-clara-broncos",
+    "displayName": "Santa Clara",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "iowa-state-cyclones",
+    "displayName": "Iowa St",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "tennessee-st-tigers",
+    "displayName": "Tennessee St",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "howard-bison",
+    "displayName": "Howard",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "umbc-retrievers",
+    "displayName": "UMBC",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "lehigh-mountain-hawks",
+    "displayName": "Lehigh",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  },
+  {
+    "id": "prairie-view-am-panthers",
+    "displayName": "Prairie View",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF"
+  }
+]
