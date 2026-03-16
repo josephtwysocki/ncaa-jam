@@ -129,14 +129,28 @@ export default function Page() {
       <audio ref={audioRef} src="/sound_razzle_dazzle.wav" preload="auto" />
       
       
-      <TeamSelectRail
-        teams={gridTeams}
-        cursorIndex={cursorIndex}
-        teamAId={teamA}
-        teamBId={teamB}
-        onCursorChange={setCursorIndex}
-        onSelect={selectTeam}
-      />
+      <div className="jamRailWrapper">
+        <TeamSelectRail
+          teams={gridTeams}
+          cursorIndex={cursorIndex}
+          teamAId={teamA}
+          teamBId={teamB}
+          onCursorChange={setCursorIndex}
+          onSelect={selectTeam}
+        />
+
+        <button
+          className="jamClearMatchup"
+          onClick={() => {
+            setTeamA(null)
+            setTeamB(null)
+            setPickPhase("A")
+            setCursorIndex(0) 
+          }}
+        >
+          CLEAR MATCHUP
+        </button>
+      </div>
 
       <div className="jamWindowsWrapper">
         <TeamWindow team={teamAData} players={playersA} playerNum={1} />
