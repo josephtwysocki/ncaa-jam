@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState, useRef } from "react"
 import Image from "next/image"
-import TEAMS_DATA_FILE from "@/data/teams.v3.json"
+import TEAMS_DATA_FILE from "@/data/teams.v4.json"
 import PLAYERS_DATA_FILE from "@/data/players.v2.json"
 import TEAM_STATS_FILE from "@/data/teamStats.v3.json" 
 import TeamSelectRail from "@/components/TeamSelectRail"
