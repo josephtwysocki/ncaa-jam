@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useMemo, useState, useRef } from "react"
+import { track } from "@vercel/analytics"
 import Image from "next/image"
 import TEAMS_DATA_FILE from "@/data/teams.v4.json"
 import PLAYERS_DATA_FILE from "@/data/players.v2.json"
@@ -20,7 +21,8 @@ export default function Page() {
   const [teamB, setTeamB] = useState<string | null>(null)
   const [cursorIndex, setCursorIndex] = useState(0)
   const [pickPhase, setPickPhase] = useState<"A" | "B">("A")
-  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null)
+  const lastTrackedMatchup = useRef<string | null>(null);
 
   // 1. Sort and Pad Teams
   const gridTeams = useMemo(() => {
@@ -80,14 +82,39 @@ export default function Page() {
     if (pickPhase === "A") {
       setTeamA(teamId);
       setPickPhase("B");
+      track("team_selected", {
+        slot: "teamA",
+        teamId,
+      });
       playRazzle();
     } else {
       // Prevent selecting the same team for both players
-      if (teamId === teamA) return; 
+      if (teamId === teamA) return;
+
       setTeamB(teamId);
+      track("team_selected", {
+        slot: "teamB",
+        teamId,
+      });
       playRazzle();
     }
   }
+
+  useEffect(() => {
+    if (!teamA || !teamB) return;
+    if (teamA === teamB) return;
+
+    const matchupId = [teamA, teamB].sort().join("__vs__");
+
+    if (lastTrackedMatchup.current === matchupId) return;
+    lastTrackedMatchup.current = matchupId;
+
+    track("matchup_viewed", {
+      teamA,
+      teamB,
+      matchupId,
+    });
+  }, [teamA, teamB]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -145,7 +172,8 @@ export default function Page() {
             setTeamA(null)
             setTeamB(null)
             setPickPhase("A")
-            setCursorIndex(0) 
+            setCursorIndex(0)
+            lastTrackedMatchup.current = null
           }}
         >
           CLEAR MATCHUP
